@@ -109,10 +109,10 @@
 				845E9D482C27BE4700E379F0 /* ChatView.swift */,
 				8412DAD22C27DF9000A07467 /* HomeView.swift */,
 				8412DAD42C27F24500A07467 /* notificationView.swift */,
+				8412DAD82C28057500A07467 /* mentallyHealth.swift */,
 				843374A82C27BA72009EA199 /* Assets.xcassets */,
 				843374AA2C27BA72009EA199 /* Preview Content */,
 				8412DAD62C27FA9800A07467 /* ProfileView.swift */,
-				8412DAD82C28057500A07467 /* mentallyHealth.swift */,
 			);
 			path = mentally;
 			sourceTree = "<group>";
