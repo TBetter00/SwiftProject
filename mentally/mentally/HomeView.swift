@@ -32,17 +32,18 @@ struct HomeView: View {
                 RoundedRectangle(cornerRadius: 6)
                     .stroke(.white, lineWidth: 2)
             )
-            HStack{
-                VStack{
-                    //Image("Location").resizable()
+            HStack(alignment: .center){
+                VStack(alignment: .leading){
+                    Image("Mental cares").resizable()
+                        .frame(width: 100, height: 100)
                     Text("หน่วยบริหารสุขภาพจิต")
                 }
                 VStack{
-                    //Image("Location").resizable()
+                    Image("healthpaper").resizable().frame(width: 100, height: 100)
                     Text("ใบรับรองสุขภาพ")
                 }
                 VStack{
-                    //Image("Location").resizable()
+                    Image("Appointment").resizable().frame(width: 100, height: 100)
                     Text("จองคิวจิตแพทย์")
                 }
             }
@@ -84,7 +85,8 @@ struct HomeView: View {
                 Spacer()
             }.padding()
             HStack{
-                
+                Image("Firstnews").resizable().frame(width: 150,height:200)
+                Image("Secondnews").resizable().frame(width: 150,height:200)
             }
             Spacer()
         }

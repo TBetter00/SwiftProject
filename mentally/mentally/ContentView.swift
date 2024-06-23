@@ -20,8 +20,14 @@ struct ContentView: View {
         TabView {
             HomeView(post: $post)
                 .tabItem {
-                    Label("", systemImage: "house")
+                    Label("Home", systemImage: "house")
                 }
+            ChatView(search: .constant(""), Aa: .constant(""))
+                .tabItem {
+                    Label("Chat", systemImage: "message")
+                }
+            notificationView()
+                .tabItem { Label("Notification", systemImage: "bell.fill") }
         }
     }
 }
