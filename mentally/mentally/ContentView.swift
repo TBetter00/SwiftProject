@@ -30,6 +30,9 @@ struct ContentView: View {
                 .tabItem { Label("Notification", systemImage: "bell.fill")
                 }
             
+                .tabItem { Label("Notification", systemImage: "bell.fill") }
+            ProfileView()
+                .tabItem { Label("Profile" , systemImage: "person.fill") }
         }
     }
 }
