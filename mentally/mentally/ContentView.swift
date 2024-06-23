@@ -27,7 +27,9 @@ struct ContentView: View {
                     Label("Chat", systemImage: "message")
                 }
             notificationView()
-                .tabItem { Label("Notification", systemImage: "bell.fill") }
+                .tabItem { Label("Notification", systemImage: "bell.fill")
+                }
+            
         }
     }
 }

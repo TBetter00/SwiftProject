@@ -18,25 +18,25 @@ struct ChatView: View {
                         Image(systemName: "person.crop.circle")
                             .resizable()
                             .frame(width: 60,height: 60)
-                        Text("Time")
+                        Text("D.Time")
                     }
                     VStack {
                         Image(systemName: "person.crop.circle")
                             .resizable()
                             .frame(width: 60,height: 60)
-                        Text("Guy")
+                        Text("D.Guy")
                     }
                     VStack{
                         Image(systemName: "person.crop.circle")
                             .resizable()
                             .frame(width: 60,height: 60)
-                        Text("Team")
+                        Text("D.Team")
                     }
                     VStack {
                         Image(systemName: "person.crop.circle")
                             .resizable()
                             .frame(width: 60,height: 60)
-                        Text("Van")
+                        Text("D.Van")
                     }
                     VStack {
                         Image(systemName: "person.crop.circle")
@@ -66,7 +66,7 @@ struct ChatView: View {
                     .frame(width: 50, height: 50)
                 
                 VStack {
-                    Text("Time")
+                    Text("D.Time")
                         .bold()
                 }
                 
