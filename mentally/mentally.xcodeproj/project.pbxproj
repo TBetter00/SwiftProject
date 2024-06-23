@@ -15,6 +15,7 @@
 		843374B62C27BA73009EA199 /* mentallyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843374B52C27BA73009EA199 /* mentallyTests.swift */; };
 		843374C02C27BA73009EA199 /* mentallyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843374BF2C27BA73009EA199 /* mentallyUITests.swift */; };
 		843374C22C27BA73009EA199 /* mentallyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843374C12C27BA73009EA199 /* mentallyUITestsLaunchTests.swift */; };
+		845E9D492C27BE4700E379F0 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E9D482C27BE4700E379F0 /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		843374BB2C27BA73009EA199 /* mentallyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mentallyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843374BF2C27BA73009EA199 /* mentallyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mentallyUITests.swift; sourceTree = "<group>"; };
 		843374C12C27BA73009EA199 /* mentallyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mentallyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		845E9D482C27BE4700E379F0 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				843374A42C27BA70009EA199 /* mentallyApp.swift */,
 				843374A62C27BA70009EA199 /* ContentView.swift */,
+				845E9D482C27BE4700E379F0 /* ChatView.swift */,
 				843374A82C27BA72009EA199 /* Assets.xcassets */,
 				843374AA2C27BA72009EA199 /* Preview Content */,
 				8412DAD22C27DF9000A07467 /* HomeView.swift */,
@@ -262,6 +265,7 @@
 			files = (
 				8412DAD32C27DF9000A07467 /* HomeView.swift in Sources */,
 				843374A72C27BA70009EA199 /* ContentView.swift in Sources */,
+				845E9D492C27BE4700E379F0 /* ChatView.swift in Sources */,
 				843374A52C27BA70009EA199 /* mentallyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
