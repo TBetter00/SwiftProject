@@ -14,17 +14,20 @@ struct ProfileView: View {
             HStack{
                 HStack{
                     VStack{
-                        Text("ประวัติ").font(.title3).bold()
-                        Image(systemName: "person.fill").resizable().frame(width: 50, height: 50)
+                        Text("ประวัติ").font(.title3).fontWeight(.heavy).foregroundStyle(.white)
+                        Image(systemName: "person.crop.circle").resizable().frame(width: 50, height: 50).foregroundStyle(.white)
                     }.padding()
                     VStack(alignment: .leading, spacing: 15){
-                        Text("My name").font(.title3.bold()).padding(.top)
-                        Text("เลขบัตรประชาชน : 1000xxxxx1234")
+                        Text("ธรรมธัช ก้อนนาค")
+                            .font(.title2.bold())
+                            .padding(.top)
+                            .foregroundStyle(.white)
+                        Text("เลขบัตรประชาชน : 1000xxxxx1234").font(.title3).foregroundStyle(.white)
                     }
                     
                 }
             }.frame(width: 400, alignment: .leading)
-                .background(LinearGradient(colors: [.green , .teal ,.blue], startPoint: .bottomLeading, endPoint: .topTrailing))
+                .background(LinearGradient(colors: [.green,.darkgreen  ,.darkblue], startPoint: .leading, endPoint: .topTrailing))
             
             RoundedRectangle(cornerRadius: 10).frame(maxHeight: 10).background(.white).foregroundStyle(.white)
             TextField("",

@@ -26,6 +26,8 @@ struct ContentView: View {
                 .tabItem {
                     Label("Chat", systemImage: "message")
                 }
+            Mentally_Health(search: .constant(""))
+                .tabItem { Label("ข่าวสาร", systemImage: "heart.fill")  }
             notificationView()
                 .tabItem { Label("Notification", systemImage: "bell.fill")
                 }
