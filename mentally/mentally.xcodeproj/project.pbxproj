@@ -10,6 +10,7 @@
 		8412DAD32C27DF9000A07467 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412DAD22C27DF9000A07467 /* HomeView.swift */; };
 		8412DAD52C27F24500A07467 /* notificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412DAD42C27F24500A07467 /* notificationView.swift */; };
 		8412DAD72C27FA9800A07467 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412DAD62C27FA9800A07467 /* ProfileView.swift */; };
+		8412DAD92C28057500A07467 /* mentallyHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412DAD82C28057500A07467 /* mentallyHealth.swift */; };
 		843374A52C27BA70009EA199 /* mentallyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843374A42C27BA70009EA199 /* mentallyApp.swift */; };
 		843374A72C27BA70009EA199 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843374A62C27BA70009EA199 /* ContentView.swift */; };
 		843374A92C27BA72009EA199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843374A82C27BA72009EA199 /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		843374C02C27BA73009EA199 /* mentallyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843374BF2C27BA73009EA199 /* mentallyUITests.swift */; };
 		843374C22C27BA73009EA199 /* mentallyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843374C12C27BA73009EA199 /* mentallyUITestsLaunchTests.swift */; };
 		845E9D492C27BE4700E379F0 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E9D482C27BE4700E379F0 /* ChatView.swift */; };
-		845E9D4B2C27F28800E379F0 /* Mentally Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E9D4A2C27F28800E379F0 /* Mentally Health.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 		8412DAD22C27DF9000A07467 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8412DAD42C27F24500A07467 /* notificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationView.swift; sourceTree = "<group>"; };
 		8412DAD62C27FA9800A07467 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8412DAD82C28057500A07467 /* mentallyHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mentallyHealth.swift; sourceTree = "<group>"; };
 		843374A12C27BA70009EA199 /* mentally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mentally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843374A42C27BA70009EA199 /* mentallyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mentallyApp.swift; sourceTree = "<group>"; };
 		843374A62C27BA70009EA199 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		843374BF2C27BA73009EA199 /* mentallyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mentallyUITests.swift; sourceTree = "<group>"; };
 		843374C12C27BA73009EA199 /* mentallyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mentallyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		845E9D482C27BE4700E379F0 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		845E9D4A2C27F28800E379F0 /* Mentally Health.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mentally Health.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,15 +107,12 @@
 				843374A42C27BA70009EA199 /* mentallyApp.swift */,
 				843374A62C27BA70009EA199 /* ContentView.swift */,
 				845E9D482C27BE4700E379F0 /* ChatView.swift */,
-<<<<<<< Updated upstream
 				8412DAD22C27DF9000A07467 /* HomeView.swift */,
 				8412DAD42C27F24500A07467 /* notificationView.swift */,
-=======
-				845E9D4A2C27F28800E379F0 /* Mentally Health.swift */,
->>>>>>> Stashed changes
 				843374A82C27BA72009EA199 /* Assets.xcassets */,
 				843374AA2C27BA72009EA199 /* Preview Content */,
 				8412DAD62C27FA9800A07467 /* ProfileView.swift */,
+				8412DAD82C28057500A07467 /* mentallyHealth.swift */,
 			);
 			path = mentally;
 			sourceTree = "<group>";
@@ -276,14 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8412DAD32C27DF9000A07467 /* HomeView.swift in Sources */,
+				8412DAD92C28057500A07467 /* mentallyHealth.swift in Sources */,
 				843374A72C27BA70009EA199 /* ContentView.swift in Sources */,
 				8412DAD52C27F24500A07467 /* notificationView.swift in Sources */,
 				845E9D492C27BE4700E379F0 /* ChatView.swift in Sources */,
-<<<<<<< Updated upstream
 				8412DAD72C27FA9800A07467 /* ProfileView.swift in Sources */,
-=======
-				845E9D4B2C27F28800E379F0 /* Mentally Health.swift in Sources */,
->>>>>>> Stashed changes
 				843374A52C27BA70009EA199 /* mentallyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
