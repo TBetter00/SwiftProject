@@ -9,6 +9,13 @@ import SwiftUI
 
 struct ProfileView: View {
     @State var Information: String = ""
+    @State var Medicalhistory: String = ""
+    @State var RightsOfInsurance: String = ""
+    @State var HealthCheck: String = ""
+    @State var AssessMentalHealth: String = ""
+    @State var Meeting: String = ""
+    @State var Setting: String = ""
+    
     var body: some View {
         VStack{
             HStack{
@@ -37,37 +44,37 @@ struct ProfileView: View {
             .background(.white.opacity(0.6))
             .clipShape(RoundedRectangle(cornerRadius: 25)).font(.title2).padding(.horizontal)
             TextField("",
-                      text: $Information,
+                      text: $Medicalhistory,
                       prompt: Text("ประวัติการรักษา").foregroundStyle(Color.teal).bold())
             .padding(EdgeInsets(top:10, leading: 30, bottom: 10, trailing: 0))
             .background(.white.opacity(0.6))
             .clipShape(RoundedRectangle(cornerRadius: 25)).font(.title2).padding(.horizontal)
             TextField("",
-                      text: $Information,
+                      text: $RightsOfInsurance,
                       prompt: Text("สิทธิและประกันการรักษา").foregroundStyle(Color.teal).bold())
             .padding(EdgeInsets(top:10, leading: 30, bottom: 10, trailing: 0))
             .background(.white.opacity(0.6))
             .clipShape(RoundedRectangle(cornerRadius: 25)).font(.title2).padding(.horizontal)
             TextField("",
-                      text: $Information,
+                      text: $HealthCheck,
                       prompt: Text("ตรวจสุขภาพ").foregroundStyle(Color.teal).bold())
             .padding(EdgeInsets(top:10, leading: 30, bottom: 10, trailing: 0))
             .background(.white.opacity(0.6))
             .clipShape(RoundedRectangle(cornerRadius: 25)).font(.title2).padding(.horizontal)
             TextField("",
-                      text: $Information,
+                      text: $AssessMentalHealth,
                       prompt: Text("ประเมินสุขภาพจิตใจ").foregroundStyle(Color.teal).bold())
             .padding(EdgeInsets(top:10, leading: 30, bottom: 10, trailing: 0))
             .background(.white.opacity(0.6))
             .clipShape(RoundedRectangle(cornerRadius: 25)).font(.title2).padding(.horizontal)
             TextField("",
-                      text: $Information,
+                      text: $Meeting,
                       prompt: Text("กำหนดการนัดพบ").foregroundStyle(Color.teal).bold())
             .padding(EdgeInsets(top:10, leading: 30, bottom: 10, trailing: 0))
             .background(.white.opacity(0.6))
             .clipShape(RoundedRectangle(cornerRadius: 25)).font(.title2).padding(.horizontal)
             TextField("",
-                      text: $Information,
+                      text: $Setting,
                       prompt: Text("การตั้งค่า").foregroundStyle(Color.teal).bold())
             .padding(EdgeInsets(top:10, leading: 30, bottom: 10, trailing: 0))
             .background(.white.opacity(0.6))
