@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8412DAD32C27DF9000A07467 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412DAD22C27DF9000A07467 /* HomeView.swift */; };
 		843374A52C27BA70009EA199 /* mentallyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843374A42C27BA70009EA199 /* mentallyApp.swift */; };
 		843374A72C27BA70009EA199 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843374A62C27BA70009EA199 /* ContentView.swift */; };
 		843374A92C27BA72009EA199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843374A82C27BA72009EA199 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8412DAD22C27DF9000A07467 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		843374A12C27BA70009EA199 /* mentally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mentally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843374A42C27BA70009EA199 /* mentallyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mentallyApp.swift; sourceTree = "<group>"; };
 		843374A62C27BA70009EA199 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				843374A62C27BA70009EA199 /* ContentView.swift */,
 				843374A82C27BA72009EA199 /* Assets.xcassets */,
 				843374AA2C27BA72009EA199 /* Preview Content */,
+				8412DAD22C27DF9000A07467 /* HomeView.swift */,
 			);
 			path = mentally;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8412DAD32C27DF9000A07467 /* HomeView.swift in Sources */,
 				843374A72C27BA70009EA199 /* ContentView.swift in Sources */,
 				843374A52C27BA70009EA199 /* mentallyApp.swift in Sources */,
 			);

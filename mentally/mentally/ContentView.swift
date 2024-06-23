@@ -8,46 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var Post : String = ""
+    @State var post : String = ""
+    
+    init() {
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithDefaultBackground()
+        UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+    }
+    
     var body: some View {
-        VStack{
-            HStack{
-                VStack{
-                    Image("Logo").resizable().frame(width: 10,height: 10)
-                    Text("Mentally").font(.title)
-                }.padding()
-                Spacer()
-                Image("ThreeLines").resizable().frame(width: 50 , height: 50).padding()
-            }
-            TextField("โพสต์ระบาย" , text: $Post).textFieldStyle(.roundedBorder).padding()
-            HStack{
-                VStack{
-                    //Image("Location").resizable()
-                    Text("หน่วยบริหารสุขภาพจิต")
+        TabView {
+            HomeView(post: $post)
+                .tabItem {
+                    Label("", systemImage: "house")
                 }
-                VStack{
-                    //Image("Location").resizable()
-                    Text("ใบรับรองสุขภาพ")
-                }
-                VStack{
-                    //Image("Location").resizable()
-                    Text("จองคิวจิตแพทย์")
-                }
-            }
-            ZStack{
-                RoundedRectangle(cornerRadius: 25.0).frame(maxHeight: 100)
-                VStack{
-                    HStack{
-                        VStack{
-                            Text("แบบทดสอบสุขภาพจิตใจ").foregroundStyle(.white)
-                            Text("ตรวจสุขภาพจิตกับผู้เชี่ยวชาญ").foregroundStyle(.white)
-                        }
-                        Image("Logo").resizable().frame(width: 10, height: 10)
-                    }
-                    Button(action: {}, label: {Text("เริ่มทำแบบทดสอบ").fontWeight(.bold).foregroundStyle(.white).background(.green).clipShape(Capsule())
-                    })
-                }
-            }.padding()
         }
     }
 }
@@ -55,3 +29,14 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+//ZStack{
+//    Color(.white)
+//    HStack{
+//        Image("HomeLogo").resizable().frame(width: 50, height: 50).padding(.leading)
+//        Image("ChatLogo").resizable().frame(width: 50, height: 50).padding(.leading)
+//        Image("Hearthlogo").resizable().frame(width: 50, height: 50).padding(.horizontal)
+//        Image("SpeakerLogo").resizable().frame(width: 50, height: 50).padding(.trailing)
+//        Image("PeopleLogo").resizable().frame(width: 50, height: 50).padding(.trailing)
+//    }
+//}.ignoresSafeArea()
