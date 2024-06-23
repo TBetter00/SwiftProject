@@ -11,9 +11,8 @@ struct ChatView: View {
     @Binding var search:String
     @Binding var Aa:String
     var body: some View {
-        VStack{
+        VStack {
             ScrollView(.horizontal) {
-                
                 HStack {
                     VStack {
                         Image(systemName: "person.crop.circle")
@@ -53,11 +52,13 @@ struct ChatView: View {
                     }
                 }
             }
+            
             VStack {
                 TextField("ค้นหา",text:$search )
                     .textFieldStyle(.roundedBorder)
             }.padding()
-                .background(Color.blue)
+                .background(Color.green)
+                .opacity(0.7)
             
             HStack {
                 Image(systemName: "person.crop.circle")
@@ -71,41 +72,43 @@ struct ChatView: View {
                 
                 Spacer()
             }
-            .background(.teal)
-            .opacity(0.5)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.gray, Color.blue]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
             ScrollView {
                 VStack{
                     HStack{
                         Spacer()
                         RoundedRectangle(cornerRadius: 40)
-                            .fill(Color.blue)
-                            .opacity(0.3)
+                            .fill(Color.black)
+                            .opacity(0.5)
                             .frame(width: 300, height: 150)
                     }
                     HStack{
                         Spacer()
                         RoundedRectangle(cornerRadius: 40)
-                            .fill(Color.blue)
-                            .opacity(0.3)
+                            .fill(Color.black)
+                            .opacity(0.4)
                             .frame(width: 300, height: 70)
                     }
                     HStack{
                         RoundedRectangle(cornerRadius: 40)
-                            .fill(Color.green)
+                            .fill(Color.black)
                             .opacity(0.3)
                             .frame(width: 300, height: 150)
                         Spacer()
                     }
-                    TextField("Aa", text: $Aa)
-                        .textFieldStyle(.roundedBorder).padding()
-                        .background(LinearGradient(gradient: Gradient(colors: [Color.black, Color.green]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
                 }
+                TextField("Aa", text: $Aa)
+                    .textFieldStyle(.roundedBorder).padding()
+                    .background(LinearGradient(gradient: Gradient(colors: [Color.black, Color.green]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
+                
+                
             }
         }.background(LinearGradient(gradient: Gradient(colors: [.blue, .green]), startPoint: .top, endPoint: .bottom))
+            .opacity(0.7)
     }
 }
 
-    
+
 #Preview{
     ChatView(search: .constant(""), Aa: .constant(""))
 }
