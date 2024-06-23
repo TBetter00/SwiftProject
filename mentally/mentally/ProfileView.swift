@@ -15,6 +15,7 @@ struct ProfileView: View {
     @State var AssessMentalHealth: String = ""
     @State var Meeting: String = ""
     @State var Setting: String = ""
+    @State var Name: String = ""
     
     var body: some View {
         VStack{
@@ -25,7 +26,7 @@ struct ProfileView: View {
                         Image(systemName: "person.crop.circle").resizable().frame(width: 50, height: 50).foregroundStyle(.white)
                     }.padding()
                     VStack(alignment: .leading, spacing: 15){
-                        Text("ธรรมธัช ก้อนนาค")
+                        TextField("ชื่อ",text: $Name)
                             .font(.title2.bold())
                             .padding(.top)
                             .foregroundStyle(.white)
